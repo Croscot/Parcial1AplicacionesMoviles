@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Parcial1</string>
+    <string name="ingrese_numeros_separados_por_coma">Ingrese los numeros (x,y...)</string>
+    <string name="resultado">Resultado</string>
+    <string name="generar">Generar</string>
+    <string name="calcularbtn">Calcular</string>
+    <string name="generar_aleatorio">Generar aleatorio</string>
+    <string name="codificar_decodificar_texto">Codificar/decodificar texto</string>
+    <string name="codificar">Codificar</string>
+    <string name="decodificar">Decodificar</string>
+    <string name="escribe_algo">Escribe algo</string>
+
+    <string-array name="selectoperation">
+        <item>Promedio de los números</item>
+        <item>Decir los pares e impares de la lista</item>
+        <item>Ordenar los numeros</item>
+    </string-array>
+</resources>

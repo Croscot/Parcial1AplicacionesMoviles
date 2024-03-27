@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edtnumeros"
+        android:layout_width="232dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="101dp"
+        android:ems="10"
+        android:hint="@string/ingrese_numeros_separados_por_coma"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btngenerar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="109dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="109dp"
+        android:layout_marginBottom="224dp"
+        android:text="@string/generar_aleatorio"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btncalcular" />
+
+    <Button
+        android:id="@+id/btncalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="151dp"
+        android:layout_marginBottom="9dp"
+        android:text="@string/calcularbtn"
+        app:layout_constraintBottom_toTopOf="@+id/btngenerar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtresultado" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="147dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtnumeros" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="247dp"
+        android:text="@string/resultado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner2" />
+
+    <TextView
+        android:id="@+id/txtresultado"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="101dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
